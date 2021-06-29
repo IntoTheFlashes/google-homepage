@@ -7,18 +7,21 @@ body {
     text-align: center;
 }
 
-img {
+
+/* Google searchbar and logo config */
+#google-main {
+    position: relative;
+    top: 184px;
+}
+
+.google-logo {
     display: block;
-    margin: 258px auto 216px auto;
+    /* margin: 258px auto 216px auto; */
     width: 272px;
 }
 
 #google-search {
     /* Set position of search bar */
-    display: flex;
-    position: relative;
-    bottom: 190px;
-    margin: auto auto 0px auto;
     height: 44px;
     width: 584px;
     border: 1px solid #c6c6c6;
@@ -40,13 +43,13 @@ img {
     box-shadow: 0 1px 6px rgba(0,0,0,.15);
 }
 
+
+/* Button config */
 button {
     /* button alignment */
-    display: inline-flex;
-    position: relative;
-    flex-direction: row;
     margin: auto 4px auto 4px;
     bottom: 8vw;
+    width: auto;
     /* button appearance */
     font-family: arial, sans-serif;
     border: none;
@@ -68,6 +71,8 @@ button:active {
     box-shadow: 0 1px 1px rgba(0,0,0,.15);
 }
 
+
+/* Footer Config */
 #footer {
     position: fixed;
     left: 0;
@@ -78,14 +83,22 @@ button:active {
 
     /* Text config */
     color: rgb(112, 117, 122);
-    text-align: center;
-    vertical-align: middle;
-    line-height: 25px;
-    text-indent: 20px;
+}
 
-    /* flex config */
+#footer a{
+    color: rgb(112, 117, 122);
+}
+
+.footer-text {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#location-text {
+    text-align: left;
+    padding: 0 20px;
 }
 
 div {
@@ -97,19 +110,32 @@ div {
     border-color: rgb(218, 220, 224);
 }
 
-.leftalign-footer {
-    text-align: left;
+
+/* Header Config */
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftalign {
+    padding: 0 10px 0 20px;
 }
 
-.leftalign-header {
-    position: fixed;
-    left: 20px;
-    text-align: left;
+.rightalign {
+    padding: 0 20px 0 10px;
 }
 
-.rightalign-header {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    text-align: right;
+/* External link config */
+a {
+    text-decoration: none;
+    color: #3c4043;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
